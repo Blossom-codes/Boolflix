@@ -39,6 +39,8 @@ public class BoolUsers {
     private String lastName;
 
     @Column(name = "status")
+
+    @Enumerated(EnumType.STRING)
     private BoolStatus status;
 
     @Column(name = "created_at", updatable = false)

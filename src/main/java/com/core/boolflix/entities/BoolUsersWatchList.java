@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
@@ -15,8 +14,8 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "bool_users_movie_list")
-public class BoolUsersMovieList {
+@Table(name = "bool_users_watch_list")
+public class BoolUsersWatchList {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
