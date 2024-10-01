@@ -1,0 +1,2050 @@
+{
+  "data": {
+    "mainSearch": {
+      "edges": [
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt18259086",
+              "titleText": {
+                "text": "Sonic the Hedgehog 3",
+                "isOriginalTitle": true
+              },
+              "originalTitleText": {
+                "text": "Sonic the Hedgehog 3",
+                "isOriginalTitle": true
+              },
+              "releaseYear": {
+                "__typename": "YearRange",
+                "year": 2024,
+                "endYear": null
+              },
+              "releaseDate": {
+                "__typename": "ReleaseDate",
+                "month": 12,
+                "day": 20,
+                "year": 2024,
+                "country": {
+                  "id": "US"
+                },
+                "restriction": null,
+                "attributes": [],
+                "displayableProperty": {
+                  "qualifiersInMarkdownList": null
+                }
+              },
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": {
+                "__typename": "Image",
+                "id": "rm921792257",
+                "url": "https://m.media-amazon.com/images/M/MV5BZTkyMGFlNzMtMTljOC00ZDMyLWE5NWItMzVjMDZmNzA2Yjc2XkEyXkFqcGc@._V1_.jpg",
+                "height": 3000,
+                "width": 2024
+              },
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm2355635",
+                        "nameText": {
+                          "text": "Ben Schwartz"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm1178359553",
+                          "url": "https://m.media-amazon.com/images/M/MV5BZjA2ZTI3ZGQtMWYyZi00ZmFjLTg2M2MtMWFjZmNhNDljMjdmXkEyXkFqcGc@._V1_.jpg",
+                          "height": 2525,
+                          "width": 2783
+                        }
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0642601",
+                        "nameText": {
+                          "text": "Colleen O'Shaughnessey"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm3560107777",
+                          "url": "https://m.media-amazon.com/images/M/MV5BNjk5OWEzYmYtMzc5MS00MmZkLTkzNTYtOTgwODVlODVmY2EzXkEyXkFqcGc@._V1_.jpg",
+                          "height": 1100,
+                          "width": 880
+                        }
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0252961",
+                        "nameText": {
+                          "text": "Idris Elba"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm1950723072",
+                          "url": "https://m.media-amazon.com/images/M/MV5BNzEzMTI2NjEyNF5BMl5BanBnXkFtZTcwNTA0OTE4OA@@._V1_.jpg",
+                          "height": 2048,
+                          "width": 1363
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt3794354",
+              "titleText": {
+                "text": "Sonic the Hedgehog",
+                "isOriginalTitle": true
+              },
+              "originalTitleText": {
+                "text": "Sonic the Hedgehog",
+                "isOriginalTitle": true
+              },
+              "releaseYear": {
+                "__typename": "YearRange",
+                "year": 2020,
+                "endYear": null
+              },
+              "releaseDate": {
+                "__typename": "ReleaseDate",
+                "month": 2,
+                "day": 14,
+                "year": 2020,
+                "country": {
+                  "id": "US"
+                },
+                "restriction": null,
+                "attributes": [],
+                "displayableProperty": {
+                  "qualifiersInMarkdownList": null
+                }
+              },
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": {
+                "__typename": "Image",
+                "id": "rm1977949953",
+                "url": "https://m.media-amazon.com/images/M/MV5BYTg2Yjc5MzItNzVmMi00MTllLWI2MDQtOTYyOWNjYWIxNzEzXkEyXkFqcGc@._V1_.jpg",
+                "height": 1596,
+                "width": 1080
+              },
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm2355635",
+                        "nameText": {
+                          "text": "Ben Schwartz"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm1178359553",
+                          "url": "https://m.media-amazon.com/images/M/MV5BZjA2ZTI3ZGQtMWYyZi00ZmFjLTg2M2MtMWFjZmNhNDljMjdmXkEyXkFqcGc@._V1_.jpg",
+                          "height": 2525,
+                          "width": 2783
+                        }
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0005188",
+                        "nameText": {
+                          "text": "James Marsden"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm1807518976",
+                          "url": "https://m.media-amazon.com/images/M/MV5BMTQyOTUzNjc0MF5BMl5BanBnXkFtZTcwNTYyMDYzMw@@._V1_.jpg",
+                          "height": 400,
+                          "width": 267
+                        }
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0000120",
+                        "nameText": {
+                          "text": "Jim Carrey"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm2776866816",
+                          "url": "https://m.media-amazon.com/images/M/MV5BMTQwMjAwNzI0M15BMl5BanBnXkFtZTcwOTY1MTMyOQ@@._V1_.jpg",
+                          "height": 2048,
+                          "width": 1665
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt12412888",
+              "titleText": {
+                "text": "Sonic the Hedgehog 2",
+                "isOriginalTitle": true
+              },
+              "originalTitleText": {
+                "text": "Sonic the Hedgehog 2",
+                "isOriginalTitle": true
+              },
+              "releaseYear": {
+                "__typename": "YearRange",
+                "year": 2022,
+                "endYear": null
+              },
+              "releaseDate": {
+                "__typename": "ReleaseDate",
+                "month": 4,
+                "day": 8,
+                "year": 2022,
+                "country": {
+                  "id": "US"
+                },
+                "restriction": null,
+                "attributes": [],
+                "displayableProperty": {
+                  "qualifiersInMarkdownList": null
+                }
+              },
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": {
+                "__typename": "Image",
+                "id": "rm85794561",
+                "url": "https://m.media-amazon.com/images/M/MV5BMDBiYzk0YTMtNWRiYi00YWY0LWE3NjgtYmJiYTAwZmYzOTM0XkEyXkFqcGc@._V1_.jpg",
+                "height": 3000,
+                "width": 2031
+              },
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0005188",
+                        "nameText": {
+                          "text": "James Marsden"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm1807518976",
+                          "url": "https://m.media-amazon.com/images/M/MV5BMTQyOTUzNjc0MF5BMl5BanBnXkFtZTcwNTYyMDYzMw@@._V1_.jpg",
+                          "height": 400,
+                          "width": 267
+                        }
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0000120",
+                        "nameText": {
+                          "text": "Jim Carrey"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm2776866816",
+                          "url": "https://m.media-amazon.com/images/M/MV5BMTQwMjAwNzI0M15BMl5BanBnXkFtZTcwOTY1MTMyOQ@@._V1_.jpg",
+                          "height": 2048,
+                          "width": 1665
+                        }
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm2355635",
+                        "nameText": {
+                          "text": "Ben Schwartz"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm1178359553",
+                          "url": "https://m.media-amazon.com/images/M/MV5BZjA2ZTI3ZGQtMWYyZi00ZmFjLTg2M2MtMWFjZmNhNDljMjdmXkEyXkFqcGc@._V1_.jpg",
+                          "height": 2525,
+                          "width": 2783
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt13666484",
+              "titleText": {
+                "text": "Sonic Villains",
+                "isOriginalTitle": true
+              },
+              "originalTitleText": {
+                "text": "Sonic Villains",
+                "isOriginalTitle": true
+              },
+              "releaseYear": null,
+              "releaseDate": null,
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": {
+                "__typename": "Image",
+                "id": "rm2599670529",
+                "url": "https://m.media-amazon.com/images/M/MV5BYWRlNGUzZDktMDMzMi00YWViLTg3ZDgtNzg0NGUyNGNiY2I2XkEyXkFqcGc@._V1_.jpg",
+                "height": 600,
+                "width": 505
+              },
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0371684",
+                        "nameText": {
+                          "text": "David Hayter"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm906233857",
+                          "url": "https://m.media-amazon.com/images/M/MV5BMTIxMDk2MzItNzI0Zi00NmU2LThmY2ItYzhmZjcyZTNiNDViXkEyXkFqcGc@._V1_.jpg",
+                          "height": 2407,
+                          "width": 1896
+                        }
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm5213242",
+                        "nameText": {
+                          "text": "Lizzie Freeman"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm441841921",
+                          "url": "https://m.media-amazon.com/images/M/MV5BZmE0NjA4ZDItN2Y1OC00Mzg3LWE2NTEtNTkwOGQ3NjRjYzk3XkEyXkFqcGc@._V1_.jpg",
+                          "height": 1100,
+                          "width": 880
+                        }
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm3631965",
+                        "nameText": {
+                          "text": "Tia Lynn Ballard"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm1357390592",
+                          "url": "https://m.media-amazon.com/images/M/MV5BNWFlNWUyYjgtMmQzYi00OWEyLWEyNDYtNTA2ZGQzMTJkZDRkXkEyXkFqcGc@._V1_.jpg",
+                          "height": 499,
+                          "width": 371
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt16744566",
+              "titleText": {
+                "text": "Sonic the Hedgehog (Part 4)",
+                "isOriginalTitle": true
+              },
+              "originalTitleText": {
+                "text": "Sonic the Hedgehog (Part 4)",
+                "isOriginalTitle": true
+              },
+              "releaseYear": {
+                "__typename": "YearRange",
+                "year": 2021,
+                "endYear": null
+              },
+              "releaseDate": {
+                "__typename": "ReleaseDate",
+                "month": 12,
+                "day": 28,
+                "year": 2021,
+                "country": {
+                  "id": "US"
+                },
+                "restriction": null,
+                "attributes": [
+                  {
+                    "id": "internet",
+                    "text": "internet"
+                  }
+                ],
+                "displayableProperty": {
+                  "qualifiersInMarkdownList": null
+                }
+              },
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": {
+                "__typename": "Image",
+                "id": "rm2486192385",
+                "url": "https://m.media-amazon.com/images/M/MV5BMDkwMTgxMTAtODFiZi00MzY5LTg4MWEtNmY4MTY5Zjk3MjQyXkEyXkFqcGc@._V1_.jpg",
+                "height": 613,
+                "width": 372
+              },
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm11140320",
+                        "nameText": {
+                          "text": "Andrew Kiker"
+                        },
+                        "primaryImage": null
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt11928520",
+              "titleText": {
+                "text": "Sonic Rebuilt",
+                "isOriginalTitle": true
+              },
+              "originalTitleText": {
+                "text": "Sonic Rebuilt",
+                "isOriginalTitle": true
+              },
+              "releaseYear": {
+                "__typename": "YearRange",
+                "year": 2020,
+                "endYear": null
+              },
+              "releaseDate": {
+                "__typename": "ReleaseDate",
+                "month": 3,
+                "day": 6,
+                "year": 2020,
+                "country": {
+                  "id": "US"
+                },
+                "restriction": null,
+                "attributes": [
+                  {
+                    "id": "internet",
+                    "text": "internet"
+                  }
+                ],
+                "displayableProperty": {
+                  "qualifiersInMarkdownList": null
+                }
+              },
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": {
+                "__typename": "Image",
+                "id": "rm543930625",
+                "url": "https://m.media-amazon.com/images/M/MV5BNmZkN2U2ZTItZTE5YS00ZDNjLThiOTgtNGU3MWEyY2VhNjE3XkEyXkFqcGc@._V1_.jpg",
+                "height": 596,
+                "width": 401
+              },
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0081644",
+                        "nameText": {
+                          "text": "Sascha Biesi"
+                        },
+                        "primaryImage": null
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm1198568",
+                        "nameText": {
+                          "text": "Martin Burke"
+                        },
+                        "primaryImage": null
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0132285",
+                        "nameText": {
+                          "text": "Charles C. Campbell"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm1213425665",
+                          "url": "https://m.media-amazon.com/images/M/MV5BODg5YmUwYTEtOWE5OC00ODJjLTkwNzItOTJlYmQ4YjY5NzdjXkEyXkFqcGc@._V1_.jpg",
+                          "height": 1200,
+                          "width": 959
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt0188205",
+              "titleText": {
+                "text": "Sonic Impact",
+                "isOriginalTitle": true
+              },
+              "originalTitleText": {
+                "text": "Sonic Impact",
+                "isOriginalTitle": true
+              },
+              "releaseYear": {
+                "__typename": "YearRange",
+                "year": 1999,
+                "endYear": null
+              },
+              "releaseDate": {
+                "__typename": "ReleaseDate",
+                "month": 3,
+                "day": 25,
+                "year": 2000,
+                "country": {
+                  "id": "KR"
+                },
+                "restriction": null,
+                "attributes": [],
+                "displayableProperty": {
+                  "qualifiersInMarkdownList": null
+                }
+              },
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": {
+                "__typename": "Image",
+                "id": "rm902142976",
+                "url": "https://m.media-amazon.com/images/M/MV5BMTI4MTQ1MDUzN15BMl5BanBnXkFtZTcwOTc3MDkxMQ@@._V1_.jpg",
+                "height": 475,
+                "width": 332
+              },
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0751638",
+                        "nameText": {
+                          "text": "James Russo"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm3140797185",
+                          "url": "https://m.media-amazon.com/images/M/MV5BYjliMzNjMDYtYzBiNi00NDE4LTlmMDMtMmRkZmY1MzAwZDM2XkEyXkFqcGc@._V1_.jpg",
+                          "height": 594,
+                          "width": 396
+                        }
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0001384",
+                        "nameText": {
+                          "text": "Ice-T"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm181121280",
+                          "url": "https://m.media-amazon.com/images/M/MV5BMjA3ODYyMDQwOV5BMl5BanBnXkFtZTcwNzM3MTAzNw@@._V1_.jpg",
+                          "height": 2048,
+                          "width": 1449
+                        }
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0365107",
+                        "nameText": {
+                          "text": "Michael Harris"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm4000094976",
+                          "url": "https://m.media-amazon.com/images/M/MV5BMTc1NDM2MTIxNl5BMl5BanBnXkFtZTYwMTAwOTc0._V1_.jpg",
+                          "height": 400,
+                          "width": 281
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt4677128",
+              "titleText": {
+                "text": "Sonic Sea",
+                "isOriginalTitle": true
+              },
+              "originalTitleText": {
+                "text": "Sonic Sea",
+                "isOriginalTitle": true
+              },
+              "releaseYear": {
+                "__typename": "YearRange",
+                "year": 2016,
+                "endYear": null
+              },
+              "releaseDate": {
+                "__typename": "ReleaseDate",
+                "month": 4,
+                "day": 22,
+                "year": 2016,
+                "country": {
+                  "id": "US"
+                },
+                "restriction": null,
+                "attributes": [],
+                "displayableProperty": {
+                  "qualifiersInMarkdownList": null
+                }
+              },
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": {
+                "__typename": "Image",
+                "id": "rm50061824",
+                "url": "https://m.media-amazon.com/images/M/MV5BMTkwNzczMzAzN15BMl5BanBnXkFtZTgwNzk2NDgwNzE@._V1_.jpg",
+                "height": 1625,
+                "width": 1080
+              },
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm1868339",
+                        "nameText": {
+                          "text": "Ken Balcomb"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm0991489",
+                          "url": "https://m.media-amazon.com/images/M/MV5BZTVlNThiZDYtMmQ5Ny00Nzk0LTg0MjQtYjQ5ODEzYzExOGRhXkEyXkFqcGc@._V1_.jpg",
+                          "height": 1429,
+                          "width": 2545
+                        }
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm1870143",
+                        "nameText": {
+                          "text": "Christopher Clark"
+                        },
+                        "primaryImage": null
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0184151",
+                        "nameText": {
+                          "text": "Jean-Michel Cousteau"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm758418176",
+                          "url": "https://m.media-amazon.com/images/M/MV5BMTI0OTE0NDY1Nl5BMl5BanBnXkFtZTcwNTk2Mjk0Mg@@._V1_.jpg",
+                          "height": 1490,
+                          "width": 2048
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt4087098",
+              "titleText": {
+                "text": "Sonic Soldier Borgman: Last Battle",
+                "isOriginalTitle": true
+              },
+              "originalTitleText": {
+                "text": "Sonic Soldier Borgman: Last Battle",
+                "isOriginalTitle": true
+              },
+              "releaseYear": {
+                "__typename": "YearRange",
+                "year": 1989,
+                "endYear": null
+              },
+              "releaseDate": {
+                "__typename": "ReleaseDate",
+                "month": 11,
+                "day": null,
+                "year": 1997,
+                "country": {
+                  "id": "US"
+                },
+                "restriction": null,
+                "attributes": [],
+                "displayableProperty": {
+                  "qualifiersInMarkdownList": null
+                }
+              },
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": {
+                "__typename": "Image",
+                "id": "rm1523507200",
+                "url": "https://m.media-amazon.com/images/M/MV5BY2Q0ZWVkOTUtYzNlYy00NjBkLThlNWItMGQ2Mzg4NTEwZTlkXkEyXkFqcGc@._V1_.jpg",
+                "height": 2500,
+                "width": 1770
+              },
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0023924",
+                        "nameText": {
+                          "text": "Yuri Amano"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm3154926336",
+                          "url": "https://m.media-amazon.com/images/M/MV5BOWZmMzg0ZWUtN2FlYi00MmVmLWE1YmUtZWE4YWEwYWZiNDNmXkEyXkFqcGc@._V1_.jpg",
+                          "height": 570,
+                          "width": 483
+                        }
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm1140791",
+                        "nameText": {
+                          "text": "Lowell Bartholomee"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm3139869952",
+                          "url": "https://m.media-amazon.com/images/M/MV5BMTgwNTI5MTMwNV5BMl5BanBnXkFtZTcwNjg4NzAzMQ@@._V1_.jpg",
+                          "height": 576,
+                          "width": 450
+                        }
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm1711399",
+                        "nameText": {
+                          "text": "Bradley Carlin"
+                        },
+                        "primaryImage": null
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt11616570",
+              "titleText": {
+                "text": "Sonic: The Wrath of Nazo",
+                "isOriginalTitle": true
+              },
+              "originalTitleText": {
+                "text": "Sonic: The Wrath of Nazo",
+                "isOriginalTitle": true
+              },
+              "releaseYear": null,
+              "releaseDate": null,
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": {
+                "__typename": "Image",
+                "id": "rm355960321",
+                "url": "https://m.media-amazon.com/images/M/MV5BM2VlODIwYzYtMzlhNS00NGRiLWE2ODYtOTUyOGFiNjc1ZmEzXkEyXkFqcGc@._V1_.jpg",
+                "height": 1145,
+                "width": 2048
+              },
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm3701984",
+                        "nameText": {
+                          "text": "Edwyn Tiong"
+                        },
+                        "primaryImage": null
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm11276864",
+                        "nameText": {
+                          "text": "Mike Wilson"
+                        },
+                        "primaryImage": null
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm7349719",
+                        "nameText": {
+                          "text": "Connor McKinley"
+                        },
+                        "primaryImage": null
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt0114500",
+              "titleText": {
+                "text": "Sonic Outlaws",
+                "isOriginalTitle": true
+              },
+              "originalTitleText": {
+                "text": "Sonic Outlaws",
+                "isOriginalTitle": true
+              },
+              "releaseYear": {
+                "__typename": "YearRange",
+                "year": 1995,
+                "endYear": null
+              },
+              "releaseDate": {
+                "__typename": "ReleaseDate",
+                "month": 7,
+                "day": 14,
+                "year": 1995,
+                "country": {
+                  "id": "US"
+                },
+                "restriction": null,
+                "attributes": [
+                  {
+                    "id": "Pike St Cinema Seattle",
+                    "text": "Pike St Cinema Seattle"
+                  }
+                ],
+                "displayableProperty": {
+                  "qualifiersInMarkdownList": null
+                }
+              },
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": {
+                "__typename": "Image",
+                "id": "rm2039913728",
+                "url": "https://m.media-amazon.com/images/M/MV5BMTk5OTU5MTgxM15BMl5BanBnXkFtZTcwNTMwMDgyMQ@@._V1_.jpg",
+                "height": 500,
+                "width": 355
+              },
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0242672",
+                        "nameText": {
+                          "text": "Lloyd Dunn"
+                        },
+                        "primaryImage": null
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0341801",
+                        "nameText": {
+                          "text": "Chris Grigg"
+                        },
+                        "primaryImage": null
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0396055",
+                        "nameText": {
+                          "text": "Mark Hosler"
+                        },
+                        "primaryImage": null
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt32627761",
+              "titleText": {
+                "text": "Sonic and Tails Misadventures: The Movie",
+                "isOriginalTitle": true
+              },
+              "originalTitleText": {
+                "text": "Sonic and Tails Misadventures: The Movie",
+                "isOriginalTitle": true
+              },
+              "releaseYear": {
+                "__typename": "YearRange",
+                "year": 2022,
+                "endYear": null
+              },
+              "releaseDate": {
+                "__typename": "ReleaseDate",
+                "month": 12,
+                "day": 21,
+                "year": 2022,
+                "country": {
+                  "id": "US"
+                },
+                "restriction": null,
+                "attributes": [
+                  {
+                    "id": "internet",
+                    "text": "internet"
+                  }
+                ],
+                "displayableProperty": {
+                  "qualifiersInMarkdownList": null
+                }
+              },
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": {
+                "__typename": "Image",
+                "id": "rm2140696833",
+                "url": "https://m.media-amazon.com/images/M/MV5BZGY5OGRiNWUtNTNlYi00MmRhLTlkNTEtYzA2ZTA0NWQ3ZDgyXkEyXkFqcGc@._V1_.jpg",
+                "height": 1035,
+                "width": 720
+              },
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm13164116",
+                        "nameText": {
+                          "text": "Leonard Winaro"
+                        },
+                        "primaryImage": null
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt0467490",
+              "titleText": {
+                "text": "Sonic Mirror",
+                "isOriginalTitle": true
+              },
+              "originalTitleText": {
+                "text": "Sonic Mirror",
+                "isOriginalTitle": true
+              },
+              "releaseYear": {
+                "__typename": "YearRange",
+                "year": 2008,
+                "endYear": null
+              },
+              "releaseDate": {
+                "__typename": "ReleaseDate",
+                "month": 4,
+                "day": 25,
+                "year": 2008,
+                "country": {
+                  "id": "FI"
+                },
+                "restriction": null,
+                "attributes": [],
+                "displayableProperty": {
+                  "qualifiersInMarkdownList": null
+                }
+              },
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": {
+                "__typename": "Image",
+                "id": "rm4120328192",
+                "url": "https://m.media-amazon.com/images/M/MV5BMmM5ZWRlZDEtNDA4OS00ZjZlLWFhNDUtYzkwYTRhNjlhMTc4XkEyXkFqcGc@._V1_.jpg",
+                "height": 841,
+                "width": 595
+              },
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0167885",
+                        "nameText": {
+                          "text": "Bill Cobham"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm4252736001",
+                          "url": "https://m.media-amazon.com/images/M/MV5BMWMyNDFhNDgtN2I5Zi00YjQxLTljZDYtZmJmMjZlMWU5NTViXkEyXkFqcGc@._V1_.jpg",
+                          "height": 2048,
+                          "width": 3072
+                        }
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm8957365",
+                        "nameText": {
+                          "text": "Martti Lappalainen"
+                        },
+                        "primaryImage": null
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0617464",
+                        "nameText": {
+                          "text": "Mikko Mäkinen"
+                        },
+                        "primaryImage": null
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt31794615",
+              "titleText": {
+                "text": "Sonic the Hedgehog: Wonders of the World",
+                "isOriginalTitle": true
+              },
+              "originalTitleText": {
+                "text": "Sonic the Hedgehog: Wonders of the World",
+                "isOriginalTitle": true
+              },
+              "releaseYear": {
+                "__typename": "YearRange",
+                "year": 1995,
+                "endYear": null
+              },
+              "releaseDate": {
+                "__typename": "ReleaseDate",
+                "month": 9,
+                "day": 30,
+                "year": 1995,
+                "country": {
+                  "id": "US"
+                },
+                "restriction": null,
+                "attributes": [
+                  {
+                    "id": "TV release",
+                    "text": "TV release"
+                  }
+                ],
+                "displayableProperty": {
+                  "qualifiersInMarkdownList": null
+                }
+              },
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": {
+                "__typename": "Image",
+                "id": "rm3553917697",
+                "url": "https://m.media-amazon.com/images/M/MV5BZTgxYjg2NjctYjM3My00MjBmLTkzNDMtNjZmN2FjNjBjYTNjXkEyXkFqcGc@._V1_.jpg",
+                "height": 828,
+                "width": 588
+              },
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0420135",
+                        "nameText": {
+                          "text": "Richard Jefferies"
+                        },
+                        "primaryImage": null
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt14187962",
+              "titleText": {
+                "text": "Midland: The Sonic Ranch",
+                "isOriginalTitle": true
+              },
+              "originalTitleText": {
+                "text": "Midland: The Sonic Ranch",
+                "isOriginalTitle": true
+              },
+              "releaseYear": {
+                "__typename": "YearRange",
+                "year": 2021,
+                "endYear": null
+              },
+              "releaseDate": {
+                "__typename": "ReleaseDate",
+                "month": 3,
+                "day": 19,
+                "year": 2021,
+                "country": {
+                  "id": "US"
+                },
+                "restriction": null,
+                "attributes": [
+                  {
+                    "id": "TV premiere",
+                    "text": "TV premiere"
+                  }
+                ],
+                "displayableProperty": {
+                  "qualifiersInMarkdownList": null
+                }
+              },
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": {
+                "__typename": "Image",
+                "id": "rm2393295105",
+                "url": "https://m.media-amazon.com/images/M/MV5BYmJlNGI4ZjEtZTJlMi00MGFkLTk0ZGYtMzRhMzRjOGYwZmI0XkEyXkFqcGc@._V1_.jpg",
+                "height": 3000,
+                "width": 2025
+              },
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm9588740",
+                        "nameText": {
+                          "text": "Jess Carson"
+                        },
+                        "primaryImage": null
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm1826248",
+                        "nameText": {
+                          "text": "Cameron Duddy"
+                        },
+                        "primaryImage": null
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm1788834",
+                        "nameText": {
+                          "text": "David Garza"
+                        },
+                        "primaryImage": null
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt16744562",
+              "titleText": {
+                "text": "Sonic the Hedgehog (Part 3)",
+                "isOriginalTitle": true
+              },
+              "originalTitleText": {
+                "text": "Sonic the Hedgehog (Part 3)",
+                "isOriginalTitle": true
+              },
+              "releaseYear": {
+                "__typename": "YearRange",
+                "year": 2021,
+                "endYear": null
+              },
+              "releaseDate": {
+                "__typename": "ReleaseDate",
+                "month": 12,
+                "day": 20,
+                "year": 2021,
+                "country": {
+                  "id": "US"
+                },
+                "restriction": null,
+                "attributes": [
+                  {
+                    "id": "internet",
+                    "text": "internet"
+                  }
+                ],
+                "displayableProperty": {
+                  "qualifiersInMarkdownList": null
+                }
+              },
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": null,
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm11140320",
+                        "nameText": {
+                          "text": "Andrew Kiker"
+                        },
+                        "primaryImage": null
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt15497826",
+              "titleText": {
+                "text": "Sonic the Hedgehog 2006",
+                "isOriginalTitle": true
+              },
+              "originalTitleText": {
+                "text": "Sonic the Hedgehog 2006",
+                "isOriginalTitle": true
+              },
+              "releaseYear": {
+                "__typename": "YearRange",
+                "year": 2021,
+                "endYear": null
+              },
+              "releaseDate": {
+                "__typename": "ReleaseDate",
+                "month": 9,
+                "day": 22,
+                "year": 2021,
+                "country": {
+                  "id": "US"
+                },
+                "restriction": null,
+                "attributes": [
+                  {
+                    "id": "internet",
+                    "text": "internet"
+                  }
+                ],
+                "displayableProperty": {
+                  "qualifiersInMarkdownList": null
+                }
+              },
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": {
+                "__typename": "Image",
+                "id": "rm1327493377",
+                "url": "https://m.media-amazon.com/images/M/MV5BMzcxYjU4M2MtODk4MC00YjExLTkzYzMtZWFlZTFhZjg3ZDdjXkEyXkFqcGc@._V1_.jpg",
+                "height": 540,
+                "width": 958
+              },
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm11140320",
+                        "nameText": {
+                          "text": "Andrew Kiker"
+                        },
+                        "primaryImage": null
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt19718808",
+              "titleText": {
+                "text": "Sonic Fantasy",
+                "isOriginalTitle": true
+              },
+              "originalTitleText": {
+                "text": "Sonic Fantasy",
+                "isOriginalTitle": true
+              },
+              "releaseYear": {
+                "__typename": "YearRange",
+                "year": 2022,
+                "endYear": null
+              },
+              "releaseDate": {
+                "__typename": "ReleaseDate",
+                "month": 11,
+                "day": 30,
+                "year": 2022,
+                "country": {
+                  "id": "ES"
+                },
+                "restriction": null,
+                "attributes": [
+                  {
+                    "id": "internet",
+                    "text": "internet"
+                  }
+                ],
+                "displayableProperty": {
+                  "qualifiersInMarkdownList": null
+                }
+              },
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": {
+                "__typename": "Image",
+                "id": "rm3044279809",
+                "url": "https://m.media-amazon.com/images/M/MV5BYjA3N2Y5YTItNjRkZS00MjhjLTk4NDktMmFmNDQyYjJmODdlXkEyXkFqcGc@._V1_.jpg",
+                "height": 2143,
+                "width": 1500
+              },
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm1458113",
+                        "nameText": {
+                          "text": "Brad Buxer"
+                        },
+                        "primaryImage": null
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0210041",
+                        "nameText": {
+                          "text": "Freddy De Mann"
+                        },
+                        "primaryImage": {
+                          "__typename": "Image",
+                          "id": "rm3832912640",
+                          "url": "https://m.media-amazon.com/images/M/MV5BMjAyMjAwNTk0N15BMl5BanBnXkFtZTYwNjg3Mzk0._V1_.jpg",
+                          "height": 400,
+                          "width": 289
+                        }
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm4716571",
+                        "nameText": {
+                          "text": "Matt Forger"
+                        },
+                        "primaryImage": null
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt29731871",
+              "titleText": {
+                "text": "The Love, from Sonic",
+                "isOriginalTitle": false
+              },
+              "originalTitleText": {
+                "text": "O Amor, Do Sonic",
+                "isOriginalTitle": true
+              },
+              "releaseYear": {
+                "__typename": "YearRange",
+                "year": 2020,
+                "endYear": null
+              },
+              "releaseDate": {
+                "__typename": "ReleaseDate",
+                "month": 8,
+                "day": 1,
+                "year": 2020,
+                "country": {
+                  "id": "BR"
+                },
+                "restriction": null,
+                "attributes": [
+                  {
+                    "id": "unknown",
+                    "text": "unknown"
+                  }
+                ],
+                "displayableProperty": {
+                  "qualifiersInMarkdownList": null
+                }
+              },
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": {
+                "__typename": "Image",
+                "id": "rm1102534401",
+                "url": "https://m.media-amazon.com/images/M/MV5BNjg2ZTNkNjMtZDRhOS00ZWE0LTg4ZTQtMzUzY2ZhNzQ0MzE4XkEyXkFqcGc@._V1_.jpg",
+                "height": 720,
+                "width": 540
+              },
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm1141471",
+                        "nameText": {
+                          "text": "Felipe Grinnan"
+                        },
+                        "primaryImage": null
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm12146366",
+                        "nameText": {
+                          "text": "Leonardo Cândido Guilloux"
+                        },
+                        "primaryImage": null
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm6553797",
+                        "nameText": {
+                          "text": "Ronaldo Julio"
+                        },
+                        "primaryImage": null
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "entity": {
+              "__typename": "Title",
+              "id": "tt4733254",
+              "titleText": {
+                "text": "BOOM! A Film About the Sonics",
+                "isOriginalTitle": false
+              },
+              "originalTitleText": {
+                "text": "Boom: A Film About the Sonics",
+                "isOriginalTitle": true
+              },
+              "releaseYear": {
+                "__typename": "YearRange",
+                "year": 2018,
+                "endYear": null
+              },
+              "releaseDate": {
+                "__typename": "ReleaseDate",
+                "month": null,
+                "day": null,
+                "year": 2018,
+                "country": {
+                  "id": "US"
+                },
+                "restriction": null,
+                "attributes": [],
+                "displayableProperty": {
+                  "qualifiersInMarkdownList": null
+                }
+              },
+              "titleType": {
+                "__typename": "TitleType",
+                "id": "movie",
+                "text": "Movie",
+                "categories": [
+                  {
+                    "id": "movie",
+                    "text": "Movie",
+                    "value": "movie"
+                  }
+                ],
+                "canHaveEpisodes": false,
+                "isEpisode": false,
+                "isSeries": false,
+                "displayableProperty": {
+                  "value": {
+                    "plainText": ""
+                  }
+                }
+              },
+              "primaryImage": {
+                "__typename": "Image",
+                "id": "rm3525075713",
+                "url": "https://m.media-amazon.com/images/M/MV5BODYzODA1MTUtZGUzMy00YTQ0LWJmNDktNWZhODBhYWE5MTI2XkEyXkFqcGc@._V1_.jpg",
+                "height": 1600,
+                "width": 1080
+              },
+              "episodes": null,
+              "series": null,
+              "principalCredits": [
+                {
+                  "credits": [
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm0035232",
+                        "nameText": {
+                          "text": "Mark Arm"
+                        },
+                        "primaryImage": null
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm1827739",
+                        "nameText": {
+                          "text": "Chris Ballew"
+                        },
+                        "primaryImage": null
+                      }
+                    },
+                    {
+                      "name": {
+                        "__typename": "Name",
+                        "id": "nm10239438",
+                        "nameText": {
+                          "text": "Bobby Bennett"
+                        },
+                        "primaryImage": null
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

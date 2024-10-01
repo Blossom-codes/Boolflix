@@ -1,0 +1,30 @@
+package com.core.boolflix.enums;
+
+public enum BoolGenres {
+    COMEDY,
+    HORROR,
+    ROMANCE,
+    THRILLER,
+    SCI_FI,
+    DRAMA,
+    ACTION,
+    ADVENTURE,
+    ANIMATION,
+    BIOGRAPHY,
+    CRIME,
+    DOCUMENTARY,
+    FAMILY,
+    FANTASY,
+    FILM_NOIR,
+    GAME_SHOW,
+    HISTORY,
+    MUSIC,
+    MUSICAL,
+    MYSTERY,
+    NEWS,
+    REALITY_TV,
+    SPORT,
+    TALK_SHOW,
+    WAR,
+    WESTERN;
+}
