@@ -10,10 +10,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/boolflix")
@@ -28,12 +25,18 @@ public class BoolController {
                     content = {@Content(mediaType = "application/json",
                             schema = @Schema(implementation = UserRequestDto.class))})})
     @PostMapping("/v1/save")
-    public ResponseEntity<ResponseDto> saveUser(@RequestBody UserRequestDto user) {
-        return ResponseEntity.ok(boolUserService.saveNewUser(user));
+    public ResponseEntity<ResponseDto> saveUser(@RequestBody UserRequestDto request) {
+        return ResponseEntity.ok(boolUserService.saveNewUser(request));
     }
 
-    @PostMapping("/v1/check")
-    public String ok(){
-        return "ok";
+    @Operation(summary = "Edit/Update user info")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Update user name, email or password",
+                    content = {@Content(mediaType = "application/json",
+                            schema = @Schema(implementation = UserRequestDto.class))})})
+    @PostMapping("/v1/update")
+    public ResponseEntity<ResponseDto> updateUser(@RequestBody UserRequestDto request,
+                                                  @RequestParam String type) {
+        return ResponseEntity.ok(boolUserService.updateUser(request, type));
     }
 }

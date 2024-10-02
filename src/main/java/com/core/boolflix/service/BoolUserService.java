@@ -5,7 +5,7 @@ import com.core.boolflix.dtos.UserRequestDto;
 
 public interface BoolUserService {
     ResponseDto saveNewUser(UserRequestDto userRequestDto);
-    ResponseDto updateUser(UserRequestDto userRequestDto);
+    ResponseDto updateUser(UserRequestDto userRequestDto, String type);
     ResponseDto deleteUser(Long id);
     ResponseDto getUsers(Long id);
 
