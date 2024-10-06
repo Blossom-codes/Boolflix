@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.core</groupId>
-	<artifactId>boolflix</artifactId>
+	<artifactId>bingehaven</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>boolflix</name>
-	<description>Boolflix backend software</description>
+	<name>bingehaven</name>
+	<description>BingeHaven backend software</description>
 	<url/>
 	<licenses>
 		<license/>
