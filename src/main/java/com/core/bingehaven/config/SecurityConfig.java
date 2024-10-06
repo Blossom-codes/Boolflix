@@ -49,8 +49,8 @@ public class SecurityConfig {
     SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(authorize ->
-                        authorize.requestMatchers(HttpMethod.POST, "/boolflix/v1/save").permitAll()
-                                .requestMatchers(HttpMethod.POST,"/boolflix/v1/login").permitAll()
+                        authorize.requestMatchers(HttpMethod.POST, "/bingehaven/v1/save").permitAll()
+                                .requestMatchers(HttpMethod.POST,"/bingehaven/v1/login").permitAll()
                                 .anyRequest().authenticated());
 
         httpSecurity.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
