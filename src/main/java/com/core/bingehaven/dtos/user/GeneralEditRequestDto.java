@@ -1,4 +1,4 @@
-package com.core.bingehaven.dtos;
+package com.core.bingehaven.dtos.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

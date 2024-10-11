@@ -1,6 +1,7 @@
 package com.core.bingehaven.controllers;
 
-import com.core.bingehaven.dtos.*;
+import com.core.bingehaven.dtos.global.ResponseDto;
+import com.core.bingehaven.dtos.user.*;
 import com.core.bingehaven.enums.BnhUpdateTypes;
 import com.core.bingehaven.service.BnhUserService;
 import io.swagger.v3.oas.annotations.Operation;

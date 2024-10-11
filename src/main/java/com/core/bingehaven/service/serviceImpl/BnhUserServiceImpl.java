@@ -1,7 +1,8 @@
 package com.core.bingehaven.service.serviceImpl;
 
 import com.core.bingehaven.config.JWTTokenProvider;
-import com.core.bingehaven.dtos.*;
+import com.core.bingehaven.dtos.global.ResponseDto;
+import com.core.bingehaven.dtos.user.*;
 import com.core.bingehaven.enums.BnhUpdateTypes;
 import com.core.bingehaven.repositories.BnhUsersRepository;
 import com.core.bingehaven.entities.BnhUsers;
@@ -17,7 +18,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.Locale;
 import java.util.Objects;
 
 @Service
@@ -163,7 +163,7 @@ public class BnhUserServiceImpl implements BnhUserService {
             return ResponseDto.builder()
                     .responseCode(BnhUtils.SUCCESS_CODE)
                     .responseMessage(BnhUtils.SUCCESS)
-                    .info(UsersDto.builder()
+                    .info(UserResponseDto.builder()
                             .id(user.getId())
                             .username(user.getUsername())
                             .firstName(user.getFirstName())

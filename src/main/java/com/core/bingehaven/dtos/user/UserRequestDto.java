@@ -1,4 +1,4 @@
-package com.core.bingehaven.dtos;
+package com.core.bingehaven.dtos.user;
 
 
 import lombok.AllArgsConstructor;
@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserRequestDto {
-    private Long id;
     private String username;
     private String password;
     private String email;

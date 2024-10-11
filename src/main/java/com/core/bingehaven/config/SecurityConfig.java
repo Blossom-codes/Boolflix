@@ -55,6 +55,7 @@ public class SecurityConfig {
                                         "/swagger-resources/**",
                                         "/webjars/**").permitAll()
                                 .requestMatchers("/bingehaven/v1/fetch/**").permitAll()
+                                .requestMatchers("/bingehaven/v1/admin/**").permitAll()
                                 .anyRequest().authenticated());
 
         httpSecurity.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));

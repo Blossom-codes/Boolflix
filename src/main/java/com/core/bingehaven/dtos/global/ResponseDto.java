@@ -1,4 +1,4 @@
-package com.core.bingehaven.dtos;
+package com.core.bingehaven.dtos.global;
 
 
 import lombok.AllArgsConstructor;

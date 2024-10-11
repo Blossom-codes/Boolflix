@@ -1,6 +1,7 @@
 package com.core.bingehaven.service;
 
-import com.core.bingehaven.dtos.*;
+import com.core.bingehaven.dtos.global.ResponseDto;
+import com.core.bingehaven.dtos.user.*;
 import com.core.bingehaven.enums.BnhUpdateTypes;
 
 public interface BnhUserService {

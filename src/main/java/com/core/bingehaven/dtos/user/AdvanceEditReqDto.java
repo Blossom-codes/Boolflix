@@ -1,5 +1,4 @@
-package com.core.bingehaven.dtos;
-
+package com.core.bingehaven.dtos.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,10 +7,10 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
-public class LoginRequestDto {
-    private String identifier;
+@NoArgsConstructor
+public class AdvanceEditReqDto {
+    private Long id;
+    private String email;
     private String password;
 }
-

@@ -24,7 +24,7 @@ public class BnhUtils {
     public static final String TRANSACTION_ERROR_CODE = "057";
 
     public static final String SUCCESS_MESSAGE = "User Registration was successful!, Welcome";
-    public static final String DEPOSIT_SUCCESS_MESSAGE = "Deposit has been made successfully";
+    public static final String UPLOAD_SUCCESS_MESSAGE = "Upload was successful";
     public static final String WITHDRAW_SUCCESS_MESSAGE = "Withdrawal has been made successfully";
     public static final String TRANSFER_SUCCESS_MESSAGE = "Transfer was successful";
     public static final String TRANSACTION_SUCCESSFUL = "Transaction was successful";
