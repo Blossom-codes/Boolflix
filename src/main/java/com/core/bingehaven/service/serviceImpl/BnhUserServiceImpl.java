@@ -1,9 +1,8 @@
 package com.core.bingehaven.service.serviceImpl;
 
 import com.core.bingehaven.config.JWTTokenProvider;
-import com.core.bingehaven.dtos.LoginRequestDto;
-import com.core.bingehaven.dtos.ResponseDto;
-import com.core.bingehaven.dtos.UserRequestDto;
+import com.core.bingehaven.dtos.*;
+import com.core.bingehaven.enums.BnhUpdateTypes;
 import com.core.bingehaven.repositories.BnhUsersRepository;
 import com.core.bingehaven.entities.BnhUsers;
 import com.core.bingehaven.enums.BnhStatus;
@@ -18,6 +17,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.Locale;
 import java.util.Objects;
 
 @Service
@@ -31,7 +31,6 @@ public class BnhUserServiceImpl implements BnhUserService {
 
     @Override
     public ResponseDto saveNewUser(UserRequestDto userRequestDto) {
-
         try {
             if (userRequestDto == null) {
                 throw new RuntimeException("Please fill all the required fields");
@@ -70,27 +69,45 @@ public class BnhUserServiceImpl implements BnhUserService {
     }
 
     @Override
-    public ResponseDto updateUser(UserRequestDto userRequestDto, String type) {
+    public ResponseDto updateUser(GeneralEditRequestDto editRequestDto) {
+        try {
+            if (editRequestDto == null) {
+                throw new RuntimeException("Please fill all the required fields");
+            }
+
+            BnhUsers user = bnhUsersRepository.findById(editRequestDto.getId()).orElseThrow(() -> new RuntimeException("User not found"));
+            BnhUsers ifUserExist = bnhUsersRepository.findByUsername(user.getUsername());
+            if (ifUserExist != null && !Objects.equals(editRequestDto.getUsername(), user.getUsername())) {
+                throw new RuntimeException("Sorry, " + editRequestDto.getUsername() + " has already been taken");
+            }
+            user.setFirstName(editRequestDto.getFirstName());
+            user.setLastName(editRequestDto.getLastName());
+            user.setUsername(editRequestDto.getUsername());
+            return ResponseDto.builder()
+                    .responseCode(BnhUtils.SUCCESS_CODE)
+                    .responseMessage(BnhUtils.SUCCESS)
+                    .build();
+        } catch (Exception ex) {
+            return ResponseDto.builder()
+                    .responseCode(BnhUtils.EXCEPTION_CODE)
+                    .responseMessage(ex.getLocalizedMessage())
+                    .build();
+        }
+    }
+
+    @Override
+    public ResponseDto advanceUserUpdate(AdvanceEditReqDto editReqDto, BnhUpdateTypes type) {
 
         try {
-            if (userRequestDto == null) {
+            if (editReqDto == null) {
                 throw new RuntimeException("Please fill all the required fields");
             }
 
             switch (type) {
-                case "NAME":
-
-                    BnhUsers user = bnhUsersRepository.findById(userRequestDto.getId()).orElseThrow(() -> new RuntimeException("Id must not be null or empty"));
-                    user.setFirstName(userRequestDto.getFirstName());
-                    user.setLastName(userRequestDto.getLastName());
-
-                    bnhUsersRepository.save(user);
-
-                    break;
-                case "PASSWORD":
-                    BnhUsers user2 = bnhUsersRepository.findById(userRequestDto.getId()).orElseThrow(() -> new RuntimeException("Id must not be null or empty"));
+                case PASSWORD:
+                    BnhUsers user2 = bnhUsersRepository.findById(editReqDto.getId()).orElseThrow(() -> new RuntimeException("Id must not be null or empty"));
                     String oldPassword = user2.getPassword();
-                    String newPassword = new BnhUtils().hashingInput(userRequestDto.getPassword());
+                    String newPassword = new BnhUtils().hashingInput(editReqDto.getPassword());
 //                    frontend to do the comparison for new password and confirm password
 //                    to make sure they are the same
                     if (Objects.equals(oldPassword, newPassword)) {
@@ -102,10 +119,10 @@ public class BnhUserServiceImpl implements BnhUserService {
 
                     break;
 
-                case "EMAIL":
+                case EMAIL:
 
-                    BnhUsers user3 = bnhUsersRepository.findById(userRequestDto.getId()).orElseThrow(() -> new RuntimeException("Id must not be null or empty"));
-                    String newEmail = userRequestDto.getEmail();
+                    BnhUsers user3 = bnhUsersRepository.findById(editReqDto.getId()).orElseThrow(() -> new RuntimeException("Id must not be null or empty"));
+                    String newEmail = editReqDto.getEmail();
                     if (bnhUsersRepository.findByEmail(newEmail) != null) {
                         throw new RuntimeException("Email has already been taken");
                     }
@@ -142,8 +159,22 @@ public class BnhUserServiceImpl implements BnhUserService {
             if (id == null) {
                 throw new RuntimeException("User not found");
             }
-
-
+            BnhUsers user = bnhUsersRepository.findById(id).orElseThrow(() -> new RuntimeException("Id must not be null or empty"));
+            return ResponseDto.builder()
+                    .responseCode(BnhUtils.SUCCESS_CODE)
+                    .responseMessage(BnhUtils.SUCCESS)
+                    .info(UsersDto.builder()
+                            .id(user.getId())
+                            .username(user.getUsername())
+                            .firstName(user.getFirstName())
+                            .lastName(user.getLastName())
+                            .email(user.getEmail())
+                            .status(user.getStatus())
+                            .createdAt(user.getCreatedAt())
+                            .updatedAt(user.getUpdatedAt())
+                            .role(user.getRole())
+                            .build())
+                    .build();
         } catch (Exception ex) {
 
         }
@@ -178,4 +209,37 @@ public class BnhUserServiceImpl implements BnhUserService {
     public ResponseDto addItemToMyList(Long movieId, Long userId, String type) {
         return null;
     }
+
+    private static char firstChar = 'A';
+    private static char secondChar = 'A';
+    private static int number = 0;
+
+    public synchronized String generateTerminalId() {
+        String subId = String.format("%02d%c%c", number, firstChar, secondChar);
+        String testTerminalId = "2011" + subId;
+//            MtmTerminals ifExistingTerminalId = terminalsRepository.findByTerminalId(testTerminalId);
+        String ifExistingTerminalId = null;
+        // Generate next ID if this one already exists
+        if (ifExistingTerminalId != null) {
+            incrementId(); // Move to the next possible ID
+            return generateTerminalId(); // Recursively generate the next ID
+        } else {
+            incrementId(); // Move to the next possible ID for future calls
+            return testTerminalId;
+        }
+    }
+
+    private void incrementId() {
+        number++;
+        if (number >= 100) {
+            number = 0;
+            secondChar++;
+            if (secondChar > 'Z') {
+                secondChar = 'A';
+                firstChar++;
+            }
+        }
+    }
+
+
 }

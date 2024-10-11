@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 
@@ -22,8 +23,14 @@ public class BnhMovies {
     private Long id;
     private String title;
     private BnhGenres genre;
-    private String director;
+    private String keywords;
+    @Column(name = "release_date")
     private String releaseDate;
+    @Column(name = "download_url")
     private String downloadUrl;
+    @CreationTimestamp
+    @Column(name = "upload_date")
     private LocalDateTime uploadDate;
+    @Column(name = "modified_date")
+    private LocalDateTime modifiedDate;
 }
