@@ -7,5 +7,5 @@ import org.springframework.stereotype.Service;
 
 public interface BnhMovieService {
     ResponseDto saveMovie(MovieRequestDto movieRequestDto);
-
+    ResponseDto getMovies();
 }

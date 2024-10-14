@@ -9,6 +9,8 @@ import com.core.bingehaven.utils.BnhUtils;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @AllArgsConstructor
 public class BnhMovieServiceImpl implements BnhMovieService {
@@ -31,7 +33,6 @@ public class BnhMovieServiceImpl implements BnhMovieService {
             movies.setDownloadUrl(movieRequestDto.getDownloadUrl());
             movies.setUploadedBy(movieRequestDto.getUploadedBy());
             movies.setReleaseDate(movieRequestDto.getReleaseDate());
-//        movies.setUploadDate();
 
             bnhMoviesRepository.save(movies);
             return ResponseDto.builder()
@@ -44,5 +45,24 @@ public class BnhMovieServiceImpl implements BnhMovieService {
                     .responseMessage(ex.getLocalizedMessage())
                     .build();
         }
+    }
+
+    @Override
+    public ResponseDto getMovies() {
+        try {
+            List<BnhMovies> moviesList = bnhMoviesRepository.findAll();
+
+            return ResponseDto.builder()
+                    .responseCode(BnhUtils.SUCCESS_CODE)
+                    .info(moviesList)
+                    .build();
+
+        } catch (Exception ex) {
+            return ResponseDto.builder()
+                    .responseCode(BnhUtils.EXCEPTION_CODE)
+                    .responseMessage(ex.getLocalizedMessage())
+                    .build();
+        }
+
     }
 }

@@ -1,0 +1,402 @@
+{
+  "data": {
+    "movies": {
+      "__typename": "TitleSearchConnection",
+      "edges": [
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt11315808",
+            "titleText": {
+              "text": "Joker: Folie à Deux",
+              "isOriginalTitle": true
+            },
+            "originalTitleText": {
+              "text": "Joker: Folie à Deux",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2024,
+              "endYear": null
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 10,
+              "day": 4,
+              "year": 2024,
+              "country": {
+                "id": "CA"
+              },
+              "restriction": null,
+              "attributes": [],
+              "displayableProperty": {
+                "qualifiersInMarkdownList": null
+              }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "movie",
+              "text": "Movie",
+              "categories": [
+                {
+                  "id": "movie",
+                  "text": "Movie",
+                  "value": "movie"
+                }
+              ],
+              "canHaveEpisodes": false,
+              "isEpisode": false,
+              "isSeries": false,
+              "displayableProperty": {
+                "value": {
+                  "plainText": ""
+                }
+              }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm1262510593",
+              "url": "https://m.media-amazon.com/images/M/MV5BZTE0M2Q0ODgtY2U2My00YThlLWI1ZjUtNzBkMmU4NTQ2YzVlXkEyXkFqcGc@._V1_.jpg",
+              "height": 3000,
+              "width": 2000
+            },
+            "metacritic": {
+              "metascore": {
+                "score": 45
+              }
+            },
+            "principalCredits": [
+              {
+                "credits": [
+                  {
+                    "name": {
+                      "__typename": "Name",
+                      "id": "nm0001618",
+                      "nameText": {
+                        "text": "Joaquin Phoenix"
+                      },
+                      "primaryImage": {
+                        "__typename": "Image",
+                        "id": "rm521242113",
+                        "url": "https://m.media-amazon.com/images/M/MV5BYjFjNGYzYjEtNGE0Ny00M2IyLTk5ZmYtODE3ZGFkMzVjYmNmXkEyXkFqcGc@._V1_.jpg",
+                        "height": 320,
+                        "width": 214
+                      }
+                    }
+                  },
+                  {
+                    "name": {
+                      "__typename": "Name",
+                      "id": "nm3078932",
+                      "nameText": {
+                        "text": "Lady Gaga"
+                      },
+                      "primaryImage": {
+                        "__typename": "Image",
+                        "id": "rm3570199552",
+                        "url": "https://m.media-amazon.com/images/M/MV5BMTg1NjQwMzU4MF5BMl5BanBnXkFtZTgwNTk5NjQ4NjE@._V1_.jpg",
+                        "height": 2048,
+                        "width": 1359
+                      }
+                    }
+                  },
+                  {
+                    "name": {
+                      "__typename": "Name",
+                      "id": "nm0322407",
+                      "nameText": {
+                        "text": "Brendan Gleeson"
+                      },
+                      "primaryImage": {
+                        "__typename": "Image",
+                        "id": "rm15839488",
+                        "url": "https://m.media-amazon.com/images/M/MV5BMTA3NTMxODI0OTBeQTJeQWpwZ15BbWU3MDQ1NTY5Mjc@._V1_.jpg",
+                        "height": 2048,
+                        "width": 1362
+                      }
+                    }
+                  },
+                  {
+                    "name": {
+                      "__typename": "Name",
+                      "id": "nm0001416",
+                      "nameText": {
+                        "text": "Catherine Keener"
+                      },
+                      "primaryImage": {
+                        "__typename": "Image",
+                        "id": "rm208245760",
+                        "url": "https://m.media-amazon.com/images/M/MV5BMjIwMzQ1Mzg1MF5BMl5BanBnXkFtZTcwNTE4MTU5MQ@@._V1_.jpg",
+                        "height": 400,
+                        "width": 267
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "certificate": {
+              "id": "ce5718668",
+              "ratingsBody": {
+                "id": "MPAA",
+                "text": "MPAA"
+              },
+              "ratingReason": "Rated R for some strong violence, language throughout, some sexuality, and brief full nudity.",
+              "rating": "R"
+            },
+            "plot": {
+              "id": "po8020010",
+              "plotText": {
+                "plainText": "Struggling with his dual identity, failed comedian Arthur Fleck meets the love of his life, Harley Quinn, while incarcerated at Arkham State Hospital."
+              }
+            },
+            "titleGenres": {
+              "__typename": "TitleGenres",
+              "genres": [
+                {
+                  "genre": {
+                    "genreId": "Crime",
+                    "text": "Crime"
+                  }
+                },
+                {
+                  "genre": {
+                    "genreId": "Drama",
+                    "text": "Drama"
+                  }
+                },
+                {
+                  "genre": {
+                    "genreId": "Musical",
+                    "text": "Musical"
+                  }
+                },
+                {
+                  "genre": {
+                    "genreId": "Thriller",
+                    "text": "Thriller"
+                  }
+                }
+              ]
+            },
+            "ratingsSummary": {
+              "aggregateRating": 5.3
+            },
+            "canRate": {
+              "isRatable": true
+            }
+          }
+        }
+      ],
+      "pageInfo": {
+        "__typename": "PageInfo",
+        "hasNextPage": true,
+        "hasPreviousPage": false,
+        "startCursor": "eyJlc1Rva2VuIjpbIjEiXSwiZmlsdGVyIjoie1widG9wTWV0ZXJUaXRsZXNUeXBlXCI6XCJNT1ZJRVwifSJ9",
+        "endCursor": "eyJlc1Rva2VuIjpbIjEiXSwiZmlsdGVyIjoie1widG9wTWV0ZXJUaXRsZXNUeXBlXCI6XCJNT1ZJRVwifSJ9"
+      }
+    },
+    "tv": {
+      "__typename": "TitleSearchConnection",
+      "edges": [
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt13207736",
+            "titleText": {
+              "text": "Monsters",
+              "isOriginalTitle": true
+            },
+            "originalTitleText": {
+              "text": "Monsters",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2022,
+              "endYear": null
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 9,
+              "day": 21,
+              "year": 2022,
+              "country": {
+                "id": "US"
+              },
+              "restriction": null,
+              "attributes": [
+                {
+                  "id": "internet",
+                  "text": "internet"
+                }
+              ],
+              "displayableProperty": {
+                "qualifiersInMarkdownList": null
+              }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "tvSeries",
+              "text": "TV Series",
+              "categories": [
+                {
+                  "id": "tv",
+                  "text": "TV",
+                  "value": "tv"
+                }
+              ],
+              "canHaveEpisodes": true,
+              "isEpisode": false,
+              "isSeries": true,
+              "displayableProperty": {
+                "value": {
+                  "plainText": "TV Series"
+                }
+              }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm2683399937",
+              "url": "https://m.media-amazon.com/images/M/MV5BNDAzYzEzZDMtOWE3Ny00MTU3LWIwY2MtMDYzZmYzYTZkYjJkXkEyXkFqcGc@._V1_.jpg",
+              "height": 1500,
+              "width": 1013
+            },
+            "metacritic": null,
+            "principalCredits": [
+              {
+                "credits": [
+                  {
+                    "name": {
+                      "__typename": "Name",
+                      "id": "nm1404239",
+                      "nameText": {
+                        "text": "Evan Peters"
+                      },
+                      "primaryImage": {
+                        "__typename": "Image",
+                        "id": "rm3782307585",
+                        "url": "https://m.media-amazon.com/images/M/MV5BMTFmYTQyZGQtZjlmNi00YjMyLTkzNzgtZWIxMTQ0OTk4YjFjXkEyXkFqcGc@._V1_CR22,0,2020,3030_.jpg",
+                        "height": 3030,
+                        "width": 2020
+                      }
+                    }
+                  },
+                  {
+                    "name": {
+                      "__typename": "Name",
+                      "id": "nm0420955",
+                      "nameText": {
+                        "text": "Richard Jenkins"
+                      },
+                      "primaryImage": {
+                        "__typename": "Image",
+                        "id": "rm2193656576",
+                        "url": "https://m.media-amazon.com/images/M/MV5BMzM5MzA4NDcyN15BMl5BanBnXkFtZTcwMDkwNjQzMg@@._V1_.jpg",
+                        "height": 400,
+                        "width": 266
+                      }
+                    }
+                  },
+                  {
+                    "name": {
+                      "__typename": "Name",
+                      "id": "nm2599408",
+                      "nameText": {
+                        "text": "Cooper Koch"
+                      },
+                      "primaryImage": {
+                        "__typename": "Image",
+                        "id": "rm3250468097",
+                        "url": "https://m.media-amazon.com/images/M/MV5BYmQyNWIzYzktNGI5My00YWRiLTk5ZWMtOGI5MWNkYTFmNjMzXkEyXkFqcGc@._V1_.jpg",
+                        "height": 1407,
+                        "width": 1125
+                      }
+                    }
+                  },
+                  {
+                    "name": {
+                      "__typename": "Name",
+                      "id": "nm0000849",
+                      "nameText": {
+                        "text": "Javier Bardem"
+                      },
+                      "primaryImage": {
+                        "__typename": "Image",
+                        "id": "rm335591936",
+                        "url": "https://m.media-amazon.com/images/M/MV5BMTY1NTc4NTYzMF5BMl5BanBnXkFtZTcwNDIwOTY1NA@@._V1_.jpg",
+                        "height": 2048,
+                        "width": 1370
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "certificate": {
+              "id": "ce4130403",
+              "ratingsBody": null,
+              "ratingReason": null,
+              "rating": "TV-MA"
+            },
+            "plot": {
+              "id": "po5332236",
+              "plotText": {
+                "plainText": "An anthology series about high-profile crimes or killers that captured public attention and notoriety."
+              }
+            },
+            "titleGenres": {
+              "__typename": "TitleGenres",
+              "genres": [
+                {
+                  "genre": {
+                    "genreId": "Biography",
+                    "text": "Biography"
+                  }
+                },
+                {
+                  "genre": {
+                    "genreId": "Crime",
+                    "text": "Crime"
+                  }
+                },
+                {
+                  "genre": {
+                    "genreId": "Drama",
+                    "text": "Drama"
+                  }
+                },
+                {
+                  "genre": {
+                    "genreId": "Horror",
+                    "text": "Horror"
+                  }
+                },
+                {
+                  "genre": {
+                    "genreId": "Thriller",
+                    "text": "Thriller"
+                  }
+                }
+              ]
+            },
+            "ratingsSummary": {
+              "aggregateRating": 7.8
+            },
+            "canRate": {
+              "isRatable": true
+            }
+          }
+        }
+      ],
+      "pageInfo": {
+        "__typename": "PageInfo",
+        "hasNextPage": true,
+        "hasPreviousPage": false,
+        "startCursor": "eyJlc1Rva2VuIjpbIjIiXSwiZmlsdGVyIjoie1widG9wTWV0ZXJUaXRsZXNUeXBlXCI6XCJUVlwifSJ9",
+        "endCursor": "eyJlc1Rva2VuIjpbIjIiXSwiZmlsdGVyIjoie1widG9wTWV0ZXJUaXRsZXNUeXBlXCI6XCJUVlwifSJ9"
+      }
+    }
+  }
+}
