@@ -50,7 +50,6 @@ public class BnhUtils {
     public static final String FAILED = "FAILED";
 
 
-
     public String generateAccountNumber() {
         String prefix = String.valueOf(Year.now());
         int min = 100000;
@@ -73,6 +72,14 @@ public class BnhUtils {
             stringBuilder.append(String.format("%02x", b));
         }
         return stringBuilder.toString();
+    }
+
+    public static String returnMovieId(String id) {
+        if (!id.contains("/")) {
+            return id;
+        }
+        String[] s = id.split("/");
+        return s[2];
     }
 
 

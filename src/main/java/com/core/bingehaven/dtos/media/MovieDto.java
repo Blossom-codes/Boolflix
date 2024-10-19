@@ -18,9 +18,12 @@ public class MovieDto {
     private String titleType;        // Type of title (e.g., movie, series)
     private int runningTimeInMinutes; // Running time in minutes
     private int year;                // Release year
+    private String releaseDate;                // Release Date
     private ImageDto image;          // Nested Image DTO for poster image
     private String plot;
     private Double ratings;
+    private String certificateRating;
+    private int ratingCount;
     private boolean isMovie;
     private boolean isSeries;
     private List<String> genres;

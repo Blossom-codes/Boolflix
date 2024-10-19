@@ -5,16 +5,21 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class MovieApiResponse {
+public class PopularMoviesResponse {
         private DataWrapper data;
 
         @Data
         public static class DataWrapper {
             private MovieConnection movies;
+            private TvConnection tv;
         }
 
         @Data
         public static class MovieConnection {
+            private List<Edge> edges;
+        }
+        @Data
+        public static class TvConnection {
             private List<Edge> edges;
         }
 
@@ -34,7 +39,7 @@ public class MovieApiResponse {
             private Plot plot;
             private TitleGenres titleGenres;
             private RatingsSummary ratingsSummary;
-            private CanRate canRate;
+            private Certificate certificate;
         }
 
         @Data
@@ -47,6 +52,8 @@ public class MovieApiResponse {
         public static class TitleType {
             private String text;
             private boolean isSeries;
+            private boolean isEpisode;
+            private boolean canHaveEpisodes;
         }
 
         @Data
@@ -99,10 +106,10 @@ public class MovieApiResponse {
             private double aggregateRating;
         }
 
-        @Data
-        public static class CanRate {
-            private boolean isRatable;
-        }
+    @Data
+    public static class Certificate {
+        private String rating;
+    }
     }
 
 
