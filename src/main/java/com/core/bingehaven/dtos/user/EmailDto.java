@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class AdvanceEditReqDto {
-    private Long id;
-    private String oldPassword;
-    private String newPassword;
-
+public class EmailDto {
+    private String recipient;
+    private String message;
+    private String subject;
+    private String attachment;
 }

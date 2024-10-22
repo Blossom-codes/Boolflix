@@ -54,6 +54,8 @@ public class SecurityConfig {
                                         "/v3/api-docs/**",
                                         "/swagger-resources/**",
                                         "/webjars/**").permitAll()
+                                .requestMatchers("/bingehaven/v1/update/**").permitAll()
+                                .requestMatchers("/bingehaven/v1/forgotPassword/**").permitAll()
                                 .requestMatchers("/bingehaven/v1/fetch/**").permitAll()
                                 .requestMatchers("/bingehaven/v1/admin/**").permitAll()
                                 .anyRequest().authenticated());

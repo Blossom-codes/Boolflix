@@ -9,9 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class AdvanceEditReqDto {
-    private Long id;
+public class ForgotPasswordReq {
     private String oldPassword;
     private String newPassword;
-
 }

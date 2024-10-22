@@ -17,7 +17,7 @@ public class BnhUtils {
     public static final String EXCEPTION_CODE = "500";
     public static final String LOGIN_ERROR_CODE = "051";
     public static final String LOGOUT_ERROR_CODE = "052";
-    public static final String ENQUIRY_ERROR_CODE = "053";
+    public static final String TOKEN_ERROR_CODE = "053";
     public static final String ACCOUNT_DOES_NOT_EXISTS_CODE = "054";
     public static final String INVALID_AMOUNT_CODE = "055";
     public static final String TRANSFER_ERROR_CODE = "056";
@@ -43,7 +43,7 @@ public class BnhUtils {
     public static final String INSUFFICIENT_BAL_MESSAGE = "Sorry, Insufficient Balance";
     public static final String ACCOUNT_EMAIL_EXISTS_MESSAGE = "User with that email already exists !";
     public static final String ACCOUNT_PHONE_NUMBER_EXISTS_MESSAGE = "User with that phone number already exists !";
-    public static final String ACCOUNT_DOES_NOT_EXISTS_CODE_MESSAGE = "Invalid account number: Account not found!";
+    public static final String RECOVER_PASSWORD_MAIL = "RECOVER YOUR BINGEHAVEN PASSWORD";
     public static final String LOGGEDIN = "ACTIVE";
     public static final String NOTLOGGEDIN = "INACTIVE";
     public static final String SUCCESS = "SUCCESS";
