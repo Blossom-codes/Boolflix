@@ -14,6 +14,7 @@ import com.core.bingehaven.service.EmailService;
 import com.core.bingehaven.utils.BnhUtils;
 import lombok.AllArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -34,6 +35,8 @@ public class BnhUserServiceImpl implements BnhUserService {
     private final JWTTokenProvider jwtTokenProvider;
     private final EmailService emailService;
     private final BnhTokenRepository bnhTokenRepository;
+    @Value("${reset.url}")
+    private final String resetUrl;
 
     @Override
     public ResponseDto saveNewUser(UserRequestDto userRequestDto) {
@@ -214,7 +217,7 @@ public class BnhUserServiceImpl implements BnhUserService {
         tokens.setToken(token);
         tokens.setType("RESET_PASSWORD");
         tokens.setEmail(email);
-        tokens.setExpiryDate(LocalDateTime.now().plusMinutes(10));
+        tokens.setExpiryDate(LocalDateTime.now().plusMinutes(5));
 
 
         bnhTokenRepository.save(tokens);
@@ -233,7 +236,8 @@ public class BnhUserServiceImpl implements BnhUserService {
             }
 //        write logic for generating and validating token
             String token = generateResetTokenForUser(recipient);
-            String resetLink = "https://yourdomain.com/reset-password?token=" + token; // Generate reset link
+
+            String resetLink = resetUrl + token; // Generate reset link
 
             String message = buildForgotPasswordEmail(resetLink);
 
@@ -279,7 +283,9 @@ public class BnhUserServiceImpl implements BnhUserService {
                 "            <p>We received a request to reset your password. If you did not request this, please ignore this email. Otherwise, click the link below to reset your password:</p>" +
                 "            <a href='" + resetLink + "' target='_blank'>Reset Password</a>" +
                 "        </div>" +
+//                add expiry notification
                 "        <div class='footer'>" +
+                "            <p>This link will expire in 5 minutes</p>" +
                 "            <p>If you didn't request a password reset, no further action is required.</p>" +
                 "            <p>&copy; 2024 BingeHaven. All rights reserved.</p>" +
                 "        </div>" +
