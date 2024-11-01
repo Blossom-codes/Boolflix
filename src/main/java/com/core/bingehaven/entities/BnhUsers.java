@@ -45,7 +45,6 @@ public class BnhUsers implements UserDetails {
     private String lastName;
 
     @Column(name = "status")
-
     @Enumerated(EnumType.STRING)
     private BnhStatus status;
 

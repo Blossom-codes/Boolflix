@@ -12,7 +12,7 @@ import com.core.bingehaven.enums.BnhUserRoles;
 import com.core.bingehaven.service.BnhUserService;
 import com.core.bingehaven.service.EmailService;
 import com.core.bingehaven.utils.BnhUtils;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -26,7 +26,7 @@ import java.util.Objects;
 import java.util.UUID;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class BnhUserServiceImpl implements BnhUserService {
 
     private final BnhUsersRepository bnhUsersRepository;
@@ -36,7 +36,7 @@ public class BnhUserServiceImpl implements BnhUserService {
     private final EmailService emailService;
     private final BnhTokenRepository bnhTokenRepository;
     @Value("${reset.url}")
-    private final String resetUrl;
+    private String resetUrl;
 
     @Override
     public ResponseDto saveNewUser(UserRequestDto userRequestDto) {
@@ -60,7 +60,7 @@ public class BnhUserServiceImpl implements BnhUserService {
             boolUser.setPassword(passwordEncoder.encode(userRequestDto.getPassword()));
             boolUser.setStatus(BnhStatus.ACTIVE);
             boolUser.setCreatedAt(LocalDateTime.now().withNano(0));
-            boolUser.setRole(BnhUserRoles.USER);
+            boolUser.setRole(BnhUserRoles.ROLE_USER);
 
             bnhUsersRepository.save(boolUser);
             return ResponseDto.builder()
@@ -85,13 +85,17 @@ public class BnhUserServiceImpl implements BnhUserService {
             }
 
             BnhUsers user = bnhUsersRepository.findById(editRequestDto.getId()).orElseThrow(() -> new RuntimeException("User not found"));
-            BnhUsers ifUserExist = bnhUsersRepository.findByUsername(user.getUsername());
-            if (ifUserExist != null && !Objects.equals(editRequestDto.getUsername(), user.getUsername())) {
+            BnhUsers ifUserExist = bnhUsersRepository.findByUsername(editRequestDto.getUsername());
+            if (ifUserExist != null) {
                 throw new RuntimeException("Sorry, " + editRequestDto.getUsername() + " has already been taken");
             }
-            user.setFirstName(editRequestDto.getFirstName());
-            user.setLastName(editRequestDto.getLastName());
-            user.setUsername(editRequestDto.getUsername());
+            user.setFirstName(editRequestDto.getFirstName() == null ? user.getFirstName() : editRequestDto.getFirstName());
+            user.setLastName(editRequestDto.getLastName() == null ? user.getLastName() : editRequestDto.getLastName());
+            user.setUsername(editRequestDto.getUsername() == null ? user.getUsername() : editRequestDto.getUsername());
+
+            bnhUsersRepository.save(user);
+//          force users to logout and login if they change their usernames
+//            front end should prompt users
             return ResponseDto.builder()
                     .responseCode(BnhUtils.SUCCESS_CODE)
                     .responseMessage(BnhUtils.SUCCESS)
@@ -160,16 +164,9 @@ public class BnhUserServiceImpl implements BnhUserService {
                 throw new RuntimeException("Account not found");
             }
 
-            String oldPassword = user.getPassword();
             String newPassword = passwordEncoder.encode(forgotPasswordReq.getNewPassword());
 //                    frontend to do the comparison for new password and confirm password
 //                    to make sure they are the same
-            if (passwordEncoder.matches(forgotPasswordReq.getOldPassword(), oldPassword)) {
-                throw new RuntimeException("Please enter your current existing password");
-            }
-            if (Objects.equals(forgotPasswordReq.getOldPassword(), forgotPasswordReq.getNewPassword())) {
-                throw new RuntimeException("Your new password cannot be the same as your old password");
-            }
 
             user.setPassword(newPassword);
             bnhUsersRepository.save(user);
@@ -195,6 +192,7 @@ public class BnhUserServiceImpl implements BnhUserService {
 
         // Check if the token is expired
         if (resetToken.getExpiryDate().isBefore(LocalDateTime.now())) {
+//            if (resetToken.getStatus() == BnhStatus.EXPIRED) {
             return false; // Token expired
         }
 
@@ -218,7 +216,7 @@ public class BnhUserServiceImpl implements BnhUserService {
         tokens.setType("RESET_PASSWORD");
         tokens.setEmail(email);
         tokens.setExpiryDate(LocalDateTime.now().plusMinutes(5));
-
+        tokens.setStatus(BnhStatus.VALID);
 
         bnhTokenRepository.save(tokens);
     }

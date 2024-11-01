@@ -47,11 +47,12 @@ public class JWTTokenProvider {
     // Validate a JWT token
     public boolean validateToken(String token) {
         try {
+            // Parse and validate the JWT
             Jwts.parser().setSigningKey(jwtSecret).build().parseClaimsJws(token);
             return true;
         } catch (Exception ex) {
-            // Handle different exceptions like expired tokens, malformed tokens, etc.
-            throw new RuntimeException("Invalid JWT Token");
+            // Handle invalid token scenarios
+            throw new RuntimeException("Invalid JWT Token: " + ex.getMessage());
         }
     }
 

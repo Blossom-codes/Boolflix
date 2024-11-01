@@ -2,5 +2,7 @@ package com.core.bingehaven.enums;
 
 public enum BnhStatus {
     ACTIVE,
-    INACTIVE
+    INACTIVE,
+    EXPIRED,
+    VALID
 }
