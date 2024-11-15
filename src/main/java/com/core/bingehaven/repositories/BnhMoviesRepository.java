@@ -4,4 +4,5 @@ import com.core.bingehaven.entities.BnhMovies;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface BnhMoviesRepository extends JpaRepository<BnhMovies, Long> {
+    BnhMovies findByMovieId(String movieId);
 }

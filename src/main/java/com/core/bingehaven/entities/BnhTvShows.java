@@ -6,7 +6,6 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 
 @Getter
@@ -14,8 +13,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "bnh_movies")
-public class BnhMovies {
+@Table(name = "bnh_tv_shows")
+public class BnhTvShows {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,8 +23,8 @@ public class BnhMovies {
     private String title;
 
     @NonNull
-    @Column(name = "movie_id")
-    private String movieId;
+    @Column(name = "tv_id")
+    private String tvId;
 
     @NonNull
     private String keywords;

@@ -13,21 +13,22 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class MovieRequestDto {
+    private String id;
     private String title;
     private String keywords;
     private String releaseDate;
-    private int year;
+    private Integer year;
     private String downloadUrl;
     private String titleType;        // Type of title (e.g., movie, series)
-    private int runningTimeInMinutes; // Running time in minutes
+    private Integer runningTimeInMinutes; // Running time in minutes
     private ImageDto image;          // Nested Image DTO for poster image
     private String plot;
     private Double ratings;
     private String certificateRating;
-    private int ratingCount;
+    private Integer ratingCount;
     private boolean isMovie;
     private boolean isSeries;
-    private List<String> genres;
+    private String genres;
     private String uploadedBy;
     private String modifiedBy;
 

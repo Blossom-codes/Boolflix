@@ -41,7 +41,8 @@ public class OverviewMapper {
 // Ratings summary, default to 0.0 if null
         movieDto.setRatings(movieData.getRatingsSummary() != null
                 ? movieData.getRatingsSummary().getAggregateRating() : 0.0); // Ratings, default to 0.0
-
+        movieDto.setRatingCount(movieData.getRatingsSummary().getVoteCount() != 0
+                ? movieData.getRatingsSummary().getVoteCount() : 0);
 // Certificate rating, default to "Unrated" if null
         movieDto.setCertificateRating(movieData.getCertificate() != null
                 ? movieData.getCertificate().getRating() : "Unrated"); // Certificate rating, default to "Unrated"

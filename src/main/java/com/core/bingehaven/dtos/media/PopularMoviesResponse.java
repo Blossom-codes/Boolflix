@@ -71,6 +71,7 @@ public class PopularMoviesResponse {
 
         @Data
         public static class Image {
+            private String id;
             private String url;
             private int height;
             private int width;

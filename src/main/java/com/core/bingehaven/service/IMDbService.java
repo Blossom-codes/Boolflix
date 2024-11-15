@@ -1,15 +1,15 @@
 package com.core.bingehaven.service;
 
 
-import com.core.bingehaven.dtos.media.FilterDto;
-import com.core.bingehaven.dtos.media.MovieDto;
+import com.core.bingehaven.dtos.media.*;
 import com.core.bingehaven.enums.BnhGenres;
 
 public interface IMDbService {
 
     MovieDto fetchMovieDetails(String movieId);
     MovieDto fetchMovieOverview(String movieId);
-    Object fetchPopular(FilterDto filterDto);
+    MediaDto fetchPopular(FilterDto filterDto);
+    KeywordDto fetchKeywords(String movieId);
     Object advanceSearch(FilterDto filterDto);
     Object fetchPopularByGenre(FilterDto filterDto, BnhGenres genres);
 }

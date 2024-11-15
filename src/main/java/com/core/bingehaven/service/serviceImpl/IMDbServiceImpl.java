@@ -76,7 +76,7 @@ public class IMDbServiceImpl implements IMDbService {
     }
 
     @Override
-    public Object fetchPopular(FilterDto filterDto) {
+    public MediaDto fetchPopular(FilterDto filterDto) {
         Request request = new Request.Builder()
                 .url("https://imdb8.p.rapidapi.com/title/v2/get-popular?first=" +
                         (StringUtils.isNotEmpty(filterDto.getNumberPerPage()) ? filterDto.getNumberPerPage() : "10")
@@ -103,6 +103,30 @@ public class IMDbServiceImpl implements IMDbService {
 //                }
 //            }
             return media;
+        } catch (Exception ex) {
+            LoggingUtils.ExceptionInfo(ex);
+            return null;
+        }
+
+    }
+
+    @Override
+    public KeywordDto fetchKeywords(String movieId) {
+        Request request = new Request.Builder()
+                .url("https://imdb8.p.rapidapi.com/title/v2/get-keywords?tconst=" + movieId +
+                        "&first=3&country=US&language=en-US")
+                .get()
+                .addHeader("X-RapidAPI-Key", rapidApiKey)
+                .addHeader("X-RapidAPI-Host", rapidApiHost)
+                .build();
+
+        try (Response response = client.newCall(request).execute()) {
+            if (!response.isSuccessful()) throw new IOException("Unexpected code " + response);
+            String responseBody = response.body().string();  // Raw JSON response
+            KeywordResponse keywordResponse = objectMapper.readValue(responseBody, KeywordResponse.class);
+            KeywordDto keywordDto = KeywordMapper.mapToKeywordDto(keywordResponse);
+
+            return keywordDto;
         } catch (Exception ex) {
             LoggingUtils.ExceptionInfo(ex);
             return null;
@@ -159,7 +183,7 @@ public class IMDbServiceImpl implements IMDbService {
             String jsonPayload = objectMapper.writeValueAsString(filterDto.getBody());
 
             MediaType mediaType = MediaType.parse("application/json");
-            RequestBody body = RequestBody.create(mediaType,jsonPayload);
+            RequestBody body = RequestBody.create(mediaType, jsonPayload);
             Request request = new Request.Builder()
                     .url("https://imdb8.p.rapidapi.com/v2/search-advance?country=US&language=en-US")
                     .post(body)

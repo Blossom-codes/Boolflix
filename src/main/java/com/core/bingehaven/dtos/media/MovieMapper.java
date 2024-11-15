@@ -30,7 +30,8 @@ public class MovieMapper {
             movieDto.setMovie(!movieData.getTitleType().isSeries()); // Check if it is a movie
             movieDto.setSeries(movieData.getTitleType().isSeries()); // Check if it is a series
             movieDto.setGenres(mapGenres(movieData)); // List of genres
-
+            PopularMoviesResponse.ReleaseDate releaseDate = movieData.getReleaseDate();
+            movieDto.setReleaseDate(releaseDate.getDay() + "-" + releaseDate.getMonth() + "-" + releaseDate.getYear());
             moviesList.add(movieDto);
         }
         mediaDto.setMovies(moviesList);
@@ -50,9 +51,11 @@ public class MovieMapper {
             movieDto.setPlot(tvData.getPlot().getPlotText().getPlainText()); // Plot
             movieDto.setRatings(tvData.getRatingsSummary().getAggregateRating());// Ratings
             boolean is = tvData.getTitleType().isSeries();
-            movieDto.setMovie(!tvData.getTitleType().isSeries()); // Check if it is a movie
+            movieDto.setMovie(tvData.getTitleType().isSeries()); // Check if it is a movie
             movieDto.setSeries(tvData.getTitleType().isSeries()); // Check if it is a series
             movieDto.setGenres(mapGenres(tvData)); // List of genres
+            PopularMoviesResponse.ReleaseDate releaseDate = tvData.getReleaseDate();
+            movieDto.setReleaseDate(releaseDate.getDay() + "-" + releaseDate.getMonth() + "-" + releaseDate.getYear());
 
             tvList.add(movieDto);
         }
@@ -68,6 +71,7 @@ public class MovieMapper {
         }
 
         return ImageDto.builder()
+                .id(image.getId())
                 .url(image.getUrl()) // Poster image URL
                 .height(image.getHeight()) // Image height
                 .width(image.getWidth()) // Image width
