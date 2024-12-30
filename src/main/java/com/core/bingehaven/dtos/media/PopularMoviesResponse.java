@@ -51,11 +51,18 @@ public class PopularMoviesResponse {
         @Data
         public static class TitleType {
             private String text;
+            private List<Categories> categories;
             private boolean isSeries;
             private boolean isEpisode;
             private boolean canHaveEpisodes;
         }
 
+        @Data
+        public static class Categories {
+            private String id;
+            private String text;
+            private String value;
+        }
         @Data
         public static class YearRange {
             private int year;

@@ -26,9 +26,9 @@ public class MovieMapper {
             movieDto.setImage(mapToImageDto(movieData.getPrimaryImage())); // Map ImageDto for the poster image
             movieDto.setPlot(movieData.getPlot().getPlotText().getPlainText()); // Plot
             movieDto.setRatings(movieData.getRatingsSummary().getAggregateRating());// Ratings
-            boolean is = movieData.getTitleType().isSeries();
-            movieDto.setMovie(!movieData.getTitleType().isSeries()); // Check if it is a movie
-            movieDto.setSeries(movieData.getTitleType().isSeries()); // Check if it is a series
+            boolean isSeries = movieData.getTitleType().isSeries();
+            movieDto.setMovie(!isSeries); // Check if it is a movie
+            movieDto.setSeries(isSeries); // Check if it is a series
             movieDto.setGenres(mapGenres(movieData)); // List of genres
             PopularMoviesResponse.ReleaseDate releaseDate = movieData.getReleaseDate();
             movieDto.setReleaseDate(releaseDate.getDay() + "-" + releaseDate.getMonth() + "-" + releaseDate.getYear());
@@ -50,9 +50,10 @@ public class MovieMapper {
             movieDto.setImage(mapToImageDto(tvData.getPrimaryImage())); // Map ImageDto for the poster image
             movieDto.setPlot(tvData.getPlot().getPlotText().getPlainText()); // Plot
             movieDto.setRatings(tvData.getRatingsSummary().getAggregateRating());// Ratings
-            boolean is = tvData.getTitleType().isSeries();
-            movieDto.setMovie(tvData.getTitleType().isSeries()); // Check if it is a movie
-            movieDto.setSeries(tvData.getTitleType().isSeries()); // Check if it is a series
+            boolean isSeries = tvData.getTitleType().isSeries();
+            String category = tvData.getTitleType().getCategories().getFirst().getValue();
+            movieDto.setMovie(!isSeries); // Check if it is a movie
+            movieDto.setSeries(isSeries); // Check if it is a series
             movieDto.setGenres(mapGenres(tvData)); // List of genres
             PopularMoviesResponse.ReleaseDate releaseDate = tvData.getReleaseDate();
             movieDto.setReleaseDate(releaseDate.getDay() + "-" + releaseDate.getMonth() + "-" + releaseDate.getYear());
